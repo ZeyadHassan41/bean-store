@@ -1,0 +1,155 @@
+:root {
+    --main-color: #4b2e2e;
+    --sec-color: #f7f3ef;
+    --hover-color: #a67c52;
+  }
+  
+  .navbar {
+    background: linear-gradient(to bottom, rgba(75, 46, 46, 0.9), transparent 100%) !important;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .navbar span {
+    color: var(--hover-color);
+  }
+  
+  .navbar .nav-link {
+    color: var(--sec-color);
+  }
+  
+  .navbar .nav-link.active {
+    color: var(--hover-color);
+  }
+  
+  .container {
+    position: relative;
+    padding: 24px 0;
+  }
+  
+  .header .text-section {
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom: 2px #2e1d1d solid;
+  }
+  
+  .header .text-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--main-color);
+    margin-bottom: 15px;
+  }
+  
+  .header .text-section p {
+    font-size: 1.2rem;
+    color: #6b4f3b;
+    max-width: 600px;
+    margin: 0 auto;
+
+  }
+  
+  .landing {
+    position: relative;
+    background: url("../assets/images/lanfing-image.jpg") center/cover no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+  
+  .landing .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(54, 78, 81, 0.8) 0%, transparent 90%);
+    z-index: 1;
+  }
+  
+  .landing-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .landing-content img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .landing .text-section {
+    flex: 1;
+    margin-left: 40px;
+    text-align: center;
+  }
+  
+  .text-section h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--main-color);
+  }
+  
+  .text-section p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #6b4f3b;
+  }
+  
+  .btn-primary {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+  }
+  .btn-primary a, .btn-secondary a{
+  text-decoration: none;
+  color: var(--sec-color);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+  }
+  
+  
+  .products-content .text-section {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .customer-content {
+  background: var(--hover-color);
+  }
+  
+  .story-content .text-section {
+    flex: 1;
+    text-align: left;
+    width: 50vw;
+  }
+  
+  .footer {
+    background-color: #2e1d1d;
+    color: var(--sec-color);
+  }
+  
+  .footer a {
+    color: var(--sec-color);
+  }
+  
+  .footer a:hover {
+    color: var(--hover-color);
+  }
+  
